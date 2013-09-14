@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}New Entry{% endblock %}
+{% block content %}
+<form method="POST" action="/process_add/">
+    Title: <input name="title" type="text" size="40" /><br />
+    <textarea name="message" rows="10" cols="40">
+    </textarea><br />
+    <input type="submit" value="Publish" />
+</form>
+{% endblock %}

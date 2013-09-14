@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head><title>{% block title %}{% endblock %}</title></head>
+    <body>
+        <h1>My Blog</h1>
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/add/">Add Entry</a></li>
+        </ul>
+        <hr />
+        {% block content %}
+        {% endblock %}
+    <body>
+<html>
