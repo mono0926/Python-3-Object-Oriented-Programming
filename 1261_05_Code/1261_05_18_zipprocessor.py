@@ -13,7 +13,7 @@ class ZipProcessor:
 
     def process_zip(self):
         self.unzip_files()
-        self.processor.process(self)
+        self.process_files()
         self.zip_files()
 
     def unzip_files(self):
